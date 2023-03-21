@@ -106,20 +106,20 @@ header {
 
 #events-container .card {
     flex: 1 1 0;
-    max-width: 25%;
+    max-width: 20%;
     border-radius: 10px;
     padding: 0;
     margin: 5px;
 }
 
 #events-container img {
-    max-height: 150px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    max-height: 200px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 .card .card-date{
-    font-size: 12px;
+    font-size: 15px;
     color:#000000;
 }
 
