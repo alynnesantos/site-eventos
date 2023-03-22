@@ -22,8 +22,8 @@
       <header>
          <nav class="navbar navbar-expand-lg navbar-light">
             <div class="collapse navbar-collapse" id="navbar">
-              <a href="" class="navbar-brand">
-                <img src="/img/logo.svg" alt="logo">
+              <a href="/" class="navbar-brand">
+                <img src="/img/logo.svg" alt="logo" >
               </a>
               <ul class="navbar-nav">
                 <li class="nav-item">
