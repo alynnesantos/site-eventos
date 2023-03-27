@@ -163,6 +163,7 @@ header {
 
 #image-container img {
     border-radius: 10px;
+    width: 500px;
 }
 
 #info-container h1 {
@@ -201,6 +202,9 @@ header {
     display: flex;
 }
 
+#description-container{
+    margin-top: 30px;
+}
 
 /* Footer */
 footer{
