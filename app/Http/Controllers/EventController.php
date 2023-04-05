@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Models\Event;
 use App\Models\User;
 
@@ -21,7 +22,7 @@ class EventController extends Controller
         } 
         
         else {
-        $events = Event::all();
+            $events = Event::all();
         }
 
         return view('welcome', ['events' => $events, 'search' => $search]);
@@ -51,7 +52,7 @@ class EventController extends Controller
 
             $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
 
-            $request->image->move(public_path('/img/events'), $imageName);
+            $requestImage->move(public_path('img/events'), $imageName);
 
             $event->image = $imageName;
         }
@@ -72,6 +73,16 @@ class EventController extends Controller
 
         return view('events.show', ['event' => $event, 'eventOwner' => $eventOwner]);
     }
+
+    public function dashboard(){
+
+        $user = auth()->user();
+
+        $events = $user->events;
+
+        return view('events.dashboard', ['events' => $events]);
+    }
+
 
 }
 

@@ -163,7 +163,7 @@ header {
 
 #image-container img {
     border-radius: 10px;
-    width: 500px;
+    width: 350px;
 }
 
 #info-container h1 {
@@ -205,6 +205,18 @@ header {
 #description-container{
     margin-top: 30px;
 }
+
+
+/* Dashboard */
+.dashboard-title-container {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.dashboard-events-container th {
+    width: 2%;
+}
+
 
 /* Footer */
 footer{
