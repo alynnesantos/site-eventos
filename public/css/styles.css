@@ -209,12 +209,16 @@ header {
 
 /* Dashboard */
 .dashboard-title-container {
-  margin-bottom: 20px;
-  margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .dashboard-events-container th {
     width: 2%;
+}
+
+.dashboard-events-container form {
+    display: inline-block;
 }
 
 
