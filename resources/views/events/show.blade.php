@@ -22,9 +22,8 @@
         <form action="/events/join/{{ $event->id}}" method="POST">
           @csrf
           <a href="/events/join/{{ $event->id}}" class="btn btn-primary" id="event-submit" onclick="event.preventDefault();this.closest('form').submit();"> Confirmar presença</a>
-        </form>
-        <h3>O evento conta com:</h3>
-        <ul id="items-list">
+        </form>                                                                                                                                                       
+        <ul id="items-list"> Itens de infraestutura:
           @foreach($event->items as $items)
             <li><ion-icon name="play-outline"></ion-icon> <span> {{ $items }} </span></li>
           @endforeach
