@@ -26,8 +26,8 @@
       <div class="form-group">
         <label for="title">O evento é privado?:</label>
         <select name="private" id="private" class="form-control" required>
-            <option value="0">Não</option>
-            <option value="1">Sim</option>
+          <option value="0">Não</option>
+          <option value="1">Sim</option>
         </select>
       </div>
       <div class="form-group">
