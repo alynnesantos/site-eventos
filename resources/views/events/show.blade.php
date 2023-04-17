@@ -19,10 +19,14 @@
         @endif
         <p class="events-participants"><ion-icon name="people-outline"></ion-icon> {{ count($event->users) }} participantes</p>
         <p class="event-owner"><ion-icon name="star-outline"></ion-icon> {{ $eventOwner['name'] }} </p>
-        <form action="/events/join/{{ $event->id}}" method="POST">
-          @csrf
-          <a href="/events/join/{{ $event->id}}" class="btn btn-primary" id="event-submit" onclick="event.preventDefault();this.closest('form').submit();"> Confirmar presença</a>
-        </form>                                                                                                                                                       
+        @if(!$hasUserJoined)
+          <form action="/events/join/{{ $event->id}}" method="POST">
+            @csrf
+            <a href="/events/join/{{ $event->id}}" class="btn btn-primary" id="event-submit" onclick="event.preventDefault();this.closest('form').submit();"> Confirmar presença</a>
+          </form>   
+        @else
+          <p class="already-joined-msg">Você está participando deste evento!</p>
+        @endif
         <ul id="items-list"> Itens de infraestutura:
           @foreach($event->items as $items)
             <li><ion-icon name="play-outline"></ion-icon> <span> {{ $items }} </span></li>

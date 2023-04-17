@@ -42,6 +42,14 @@ header {
     padding: 10px;
 }
 
+#info-container .already-joined-msg {
+    margin: 15px 0;
+    color: #004085;
+    background-color: #cce5ff;
+    border: 1px solid #b8daff;
+    padding: 8px;
+    width: 320px;
+}
 
 /* navbar */
 #navbar img {
@@ -59,7 +67,7 @@ header {
     color: #757575;
 }
 
-#navbar a:houver{ 
+#navbar a:hover{ 
     color: #f08d14;
 }
 
